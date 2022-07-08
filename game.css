@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+
+.game{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vm;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5c1cd;
+}
+
+.title{
+    position: absolute;
+    top: 0;
+    font-size: 4rem;
+    z-index: 2;
+}
+
+/*score board*/
+.score {
+    display: flex;
+    width: 30vw;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 70px;
+    z-index: 1;
+}
+
+.p-count, .c-count{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.separator {
+    font-size: 48px;
+}
+
+.move {
+    font-size: 24px;
+    margin-top: 4rem;
+}
+
+/*display action*/
+.action {
+    max-width: 800px;
+    padding: 40px 20px;
+    margin-top: 1rem;
+    background-color: #aac9ce;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    gap: 50px;
+}
+.options {
+    border-radius: 50%;
+    border-width: 4px;
+    border: solid white;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+background: white;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.reload {
+    display: none;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #aac9ce;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

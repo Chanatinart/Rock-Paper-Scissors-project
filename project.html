@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    
+    <section class="game">
+        <!--title-->
+        <div class="title">Rock Paper Scissor</div>
+
+        <!--display score of player and computer-->
+        <div class="score">
+            <div class="playerScore">
+                <h2>Player</h2>
+                <p class="p-count count">0</p>
+            </div>
+            <div class="separator">VS</div>
+            <div class="computerScore">
+                <h2>Computer</h2>
+                <p class="c-count count">0</p>
+            </div>
+        </div>
+
+        <!--display move-->
+        <div class="move">Click on the image below to select your move</div>
+        
+        <!--action display-->
+        <div class="action">
+            <input class="options" type="image" src="pic/rock.png" value="Rock"/>
+            <input class="options" type="image" src="pic/paper.png" value="Paper"/>
+            <input class="options" type="image" src="pic/scissor.png" value="Scissors"/>
+        </div>
+
+        <!--result of game-->
+        <div class="result"></div>
+
+        <!--reload the game-->
+        <button class="reload"></button>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
