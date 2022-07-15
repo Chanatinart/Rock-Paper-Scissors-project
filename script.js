@@ -24,7 +24,7 @@ function compareInputs(pInput, cInput) {
     const result = document.querySelector(".result");
     const playerScoreBoard = document.querySelector(".p-count");
     const computerScoreBoard = document.querySelector(".c-count");
-    const currentMatch = '${pInput} vs ${cInput}';
+    const currentMatch = `${pInput} vs ${cInput}`;
     if (pInput === cInput) {
         result.TextContent = 'Tie'
     }
@@ -68,13 +68,10 @@ function updateScore() {
 }
 //check winner
 function checkWinner() {
-    if (playerScore === 5 || computerScore === 5) {
-        const winner =
-        playerScore ===5
-        ? "You win the game!"
-        : "Computer wins the game! Try again next time!";
-        alert(winner);
-        return true;
+    if (playerScore === 5) {
+        return alert("You win the game!");
+    } else if(computerScore === 5) {
+        return alert("Computer wins the game! Try again next time!");
     }
-    return false;
+
 }
